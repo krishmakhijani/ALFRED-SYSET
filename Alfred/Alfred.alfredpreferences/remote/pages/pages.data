@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>pages</key>
+	<array>
+		<string>D1C741E3-C90D-4E4E-BFCA-3BBF454A9BBE</string>
+		<string>CD27674E-088E-42B9-B134-2FD6F8B9F744</string>
+		<string>D610D5C7-9105-4398-A4CB-E624DEB4244C</string>
+		<string>3B86BD48-AE49-4792-9CE3-AEA153860033</string>
+		<string>E9A0566D-8157-46F4-AFBD-92BAB6A15923</string>
+		<string>DF855141-6248-4472-8C7B-FDA431752A8A</string>
+	</array>
+	<key>uid</key>
+	<string>D71FD97E-9DB7-4246-92D2-7BE4D006B65C</string>
+</dict>
+</plist>
