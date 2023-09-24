@@ -1,0 +1,64 @@
+{
+  "alfredtheme" : {
+    "result" : {
+      "textSpacing" : 5,
+      "subtext" : {
+        "size" : 12,
+        "colorSelected" : "#FFFFFFC4",
+        "font" : "System",
+        "color" : "#00000071"
+      },
+      "shortcut" : {
+        "size" : 16,
+        "colorSelected" : "#FFFFFFFF",
+        "font" : "System",
+        "color" : "#4B7DB6FF"
+      },
+      "backgroundSelected" : "#275E54D0",
+      "text" : {
+        "size" : 16,
+        "colorSelected" : "#FFFFFFFF",
+        "font" : "System",
+        "color" : "#000000E5"
+      },
+      "iconPaddingHorizontal" : 4,
+      "roundness" : 0,
+      "paddingVertical" : 3,
+      "iconSize" : 25
+    },
+    "search" : {
+      "backgroundSelected" : "#26585ADD",
+      "paddingHorizontal" : 8,
+      "spacing" : 0,
+      "text" : {
+        "size" : 30,
+        "colorSelected" : "#FFFFFFFF",
+        "font" : "System Light",
+        "color" : "#000000FF"
+      },
+      "background" : "#0000001A",
+      "roundness" : 0,
+      "paddingVertical" : 3
+    },
+    "window" : {
+      "color" : "#FEFFFFCA",
+      "paddingHorizontal" : 0,
+      "width" : 730,
+      "borderPadding" : 0,
+      "borderColor" : "#0000007F",
+      "blur" : 12,
+      "roundness" : -53,
+      "paddingVertical" : 0
+    },
+    "credit" : "Tamio",
+    "separator" : {
+      "color" : "#CBCBCBF3",
+      "thickness" : 0
+    },
+    "scrollbar" : {
+      "color" : "#48766DFF",
+      "thickness" : 1
+    },
+    "name" : "Minimal Wide"
+  }
+}

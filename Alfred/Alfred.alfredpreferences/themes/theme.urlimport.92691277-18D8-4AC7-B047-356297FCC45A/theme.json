@@ -1,0 +1,64 @@
+{
+  "alfredtheme" : {
+    "result" : {
+      "textSpacing" : 10,
+      "subtext" : {
+        "size" : 12,
+        "colorSelected" : "#000000C4",
+        "font" : "System",
+        "color" : "#000000FF"
+      },
+      "shortcut" : {
+        "size" : 16,
+        "colorSelected" : "#56835EFF",
+        "font" : "System",
+        "color" : "#CCD3D1FF"
+      },
+      "backgroundSelected" : "#E2EBE6FF",
+      "text" : {
+        "size" : 18,
+        "colorSelected" : "#000000FF",
+        "font" : "Optima",
+        "color" : "#000000E5"
+      },
+      "iconPaddingHorizontal" : 19,
+      "roundness" : 19,
+      "paddingVertical" : 18,
+      "iconSize" : 48
+    },
+    "search" : {
+      "backgroundSelected" : "#E3EBE6FF",
+      "paddingHorizontal" : 17,
+      "spacing" : 8,
+      "text" : {
+        "size" : 55,
+        "colorSelected" : "#000000FF",
+        "font" : "Optima",
+        "color" : "#000000FF"
+      },
+      "background" : "#FFFFFF00",
+      "roundness" : 64,
+      "paddingVertical" : 17
+    },
+    "window" : {
+      "color" : "#FFFFFFFF",
+      "paddingHorizontal" : 25,
+      "width" : 783,
+      "borderPadding" : 0,
+      "borderColor" : "#FFFFFF00",
+      "blur" : 0,
+      "roundness" : 23,
+      "paddingVertical" : 20
+    },
+    "credit" : "Abhijeet",
+    "separator" : {
+      "color" : "#FFFFFF27",
+      "thickness" : 0
+    },
+    "scrollbar" : {
+      "color" : "#E1EBE5FF",
+      "thickness" : 6
+    },
+    "name" : "Cleen Light"
+  }
+}
