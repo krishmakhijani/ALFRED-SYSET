@@ -1,0 +1,64 @@
+{
+  "alfredtheme" : {
+    "result" : {
+      "textSpacing" : 2,
+      "subtext" : {
+        "size" : 12,
+        "colorSelected" : "#E900477F",
+        "font" : "Avenir Next",
+        "color" : "#FEFFFE00"
+      },
+      "shortcut" : {
+        "size" : 13,
+        "colorSelected" : "#42424200",
+        "font" : "Avenir Next",
+        "color" : "#00000000"
+      },
+      "backgroundSelected" : "#281731FF",
+      "text" : {
+        "size" : 26,
+        "colorSelected" : "#E90047FF",
+        "font" : "Avenir Next",
+        "color" : "#54668CFF"
+      },
+      "iconPaddingHorizontal" : 5,
+      "roundness" : 0,
+      "paddingVertical" : 2,
+      "iconSize" : 43
+    },
+    "search" : {
+      "backgroundSelected" : "#B5D5FFFF",
+      "paddingHorizontal" : 8,
+      "spacing" : 10,
+      "text" : {
+        "size" : 40,
+        "colorSelected" : "#000000FF",
+        "font" : "Avenir Next",
+        "color" : "#E90047FF"
+      },
+      "background" : "#091A2DFF",
+      "roundness" : 0,
+      "paddingVertical" : 10
+    },
+    "window" : {
+      "color" : "#0A1B2CFF",
+      "paddingHorizontal" : 0,
+      "width" : 680,
+      "borderPadding" : 20,
+      "borderColor" : "#FDFFFD00",
+      "blur" : 19,
+      "roundness" : -52,
+      "paddingVertical" : 0
+    },
+    "credit" : "ietwat",
+    "separator" : {
+      "color" : "#00000000",
+      "thickness" : 4
+    },
+    "scrollbar" : {
+      "color" : "#FEFFFE19",
+      "thickness" : 1
+    },
+    "name" : "UA Midnight"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "alfredtheme" : {
+    "result" : {
+      "textSpacing" : 5,
+      "subtext" : {
+        "size" : 12,
+        "colorSelected" : "#646478CB",
+        "font" : "Menlo",
+        "color" : "#00000049"
+      },
+      "shortcut" : {
+        "size" : 16,
+        "colorSelected" : "#323232FF",
+        "font" : "Menlo",
+        "color" : "#3232327E"
+      },
+      "backgroundSelected" : "#0000001A",
+      "text" : {
+        "size" : 14,
+        "colorSelected" : "#0A0A0AFF",
+        "font" : "Menlo",
+        "color" : "#323246CB"
+      },
+      "iconPaddingHorizontal" : 7,
+      "roundness" : 0,
+      "paddingVertical" : 6,
+      "iconSize" : 40
+    },
+    "search" : {
+      "backgroundSelected" : "#F5C3C5FF",
+      "paddingHorizontal" : 8,
+      "spacing" : 0,
+      "text" : {
+        "size" : 24,
+        "colorSelected" : "#000000FF",
+        "font" : "Menlo",
+        "color" : "#0A0A32FF"
+      },
+      "background" : "#00000000",
+      "roundness" : 0,
+      "paddingVertical" : 10
+    },
+    "window" : {
+      "color" : "#FDF6E3FF",
+      "paddingHorizontal" : 0,
+      "width" : 400,
+      "borderPadding" : 0,
+      "borderColor" : "#00000000",
+      "blur" : 40,
+      "roundness" : 3,
+      "paddingVertical" : 0
+    },
+    "credit" : "Mack",
+    "separator" : {
+      "color" : "#CBCBCBF3",
+      "thickness" : 0
+    },
+    "scrollbar" : {
+      "color" : "#00497FFF",
+      "thickness" : 5
+    },
+    "name" : "Solarized Light"
+  }
+}
