@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<workflow>
+  <name>Chakra UI docs search</name>
+  <version>1.0.0</version>
+  <bundle>com.wirtzdan.chakra-ui-docs</bundle>
+  <updated>1616315299</updated>
+  <file>chakra-ui-search-v1.0.0.alfredworkflow</file>
+</workflow>

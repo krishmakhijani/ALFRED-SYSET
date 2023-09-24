@@ -16,7 +16,7 @@
       },
       "backgroundSelected" : "#293338FF",
       "text" : {
-        "size" : 13,
+        "size" : 24,
         "colorSelected" : "#859801FF",
         "font" : "Monaco",
         "color" : "#819395FF"
@@ -31,24 +31,24 @@
       "paddingHorizontal" : 8,
       "spacing" : 3,
       "text" : {
-        "size" : 19,
+        "size" : 46,
         "colorSelected" : "#000000FF",
         "font" : "Monaco",
         "color" : "#FDF6E3FF"
       },
       "background" : "#202A2FFF",
-      "roundness" : 0,
+      "roundness" : 64,
       "paddingVertical" : 0
     },
     "window" : {
       "color" : "#202A2FFF",
-      "paddingHorizontal" : 3,
+      "paddingHorizontal" : 25,
       "width" : 560,
-      "borderPadding" : 0,
+      "borderPadding" : 17,
       "borderColor" : "#002733FF",
       "blur" : 0,
-      "roundness" : 3,
-      "paddingVertical" : 3
+      "roundness" : 51,
+      "paddingVertical" : 13
     },
     "credit" : "Velina V Veleva",
     "separator" : {
