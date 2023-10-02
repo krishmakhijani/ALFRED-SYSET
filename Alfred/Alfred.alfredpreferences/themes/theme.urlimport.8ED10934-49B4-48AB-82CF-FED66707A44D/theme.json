@@ -47,7 +47,7 @@
       "borderPadding" : 0,
       "borderColor" : "#000000A5",
       "blur" : 4,
-      "roundness" : 3,
+      "roundness" : 27,
       "paddingVertical" : 8
     },
     "credit" : "Magnus Fredlundh",

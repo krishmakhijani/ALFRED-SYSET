@@ -63,7 +63,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>./docs -u</string>
+				<string>arch -x86_64 ./workflow -u</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -98,15 +98,15 @@
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
-				<true/>
+				<false/>
 				<key>queuedelaymode</key>
-				<integer>0</integer>
+				<integer>2</integer>
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
 				<string>Fetching the documentation ...</string>
 				<key>script</key>
-				<string>./docs -q "{query}"</string>
+				<string>arch -x86_64 ./workflow -q "{query}"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -149,6 +149,8 @@
 				</array>
 				<key>elselabel</key>
 				<string>Open URL</string>
+				<key>hideelse</key>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
@@ -162,12 +164,14 @@
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>{query}</string>
-				<key>utf8</key>
-				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -184,37 +188,39 @@
 		<key>0AE138D9-046B-4A45-A3F0-354650578D9C</key>
 		<dict>
 			<key>xpos</key>
-			<integer>685</integer>
+			<real>685</real>
 			<key>ypos</key>
-			<integer>140</integer>
+			<real>140</real>
 		</dict>
 		<key>93C30A65-5631-4CDD-8DE6-C9593E5E7A4C</key>
 		<dict>
 			<key>xpos</key>
-			<integer>460</integer>
+			<real>460</real>
 			<key>ypos</key>
-			<integer>280</integer>
+			<real>280</real>
 		</dict>
 		<key>F394C4FF-40C8-4047-A2BE-1128DDBE5508</key>
 		<dict>
 			<key>xpos</key>
-			<integer>235</integer>
+			<real>235</real>
 			<key>ypos</key>
-			<integer>260</integer>
+			<real>260</real>
 		</dict>
 		<key>F7C945B1-22DC-4A83-B710-8D829B587A8A</key>
 		<dict>
 			<key>xpos</key>
-			<integer>685</integer>
+			<real>685</real>
 			<key>ypos</key>
-			<integer>395</integer>
+			<real>395</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>2.1.1</string>
+	<string>2.1.8</string>
 	<key>webaddress</key>
-	<string>https://github.com/techouse</string>
+	<string>https://github.com/techouse/alfred-flutter-docs</string>
 </dict>
 </plist>
