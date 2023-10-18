@@ -18,7 +18,7 @@ class DevDocs {
   private $template;
 
   public function __construct($query, $doc) {
-    $this->baseUrl = getenv('BASE_URL') ?: 'http://localhost:9292/';
+    $this->baseUrl = getenv('BASE_URL') ?: 'https://devdocs.io/';
     $this->cacheLife = (int)(getenv('CACHE_LIFE') ?: '7');
     $this->template = getenv('TEMPLATE') ?: '$baseUrl$documentation/$path';
     $this->workflows = new Workflows();
