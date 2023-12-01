@@ -4,7 +4,7 @@
 <dict>
 	<key>custom</key>
 	<string>on alfred_script(q)
-	tell application "iTerm2"
+	tell application "iTerm"
 		activate
 		do script q
 	end tell

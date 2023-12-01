@@ -4,6 +4,17 @@
 <dict>
 	<key>customSites</key>
 	<dict>
+		<key>139444E6-3696-4471-970E-1C76C48270CC</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>bing</string>
+			<key>text</key>
+			<string>BING CHAT</string>
+			<key>url</key>
+			<string>https://www.bing.com/search?q=Bing+AI&amp;showconv=1&amp;FORM=hpcodx</string>
+		</dict>
 		<key>1B148BA0-BCDC-4A5E-8AA8-180957FC63C1</key>
 		<dict>
 			<key>enabled</key>
@@ -25,6 +36,39 @@
 			<string>CSS</string>
 			<key>url</key>
 			<string>https://developer.mozilla.org/en-US/docs/Web/CSS/{query}</string>
+		</dict>
+		<key>70F1DA0F-3F73-434C-9871-45F7558A3DEA</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>srmail</string>
+			<key>text</key>
+			<string>SRMMAIL</string>
+			<key>url</key>
+			<string>https://mail.google.com/mail/u/1/#inbox</string>
+		</dict>
+		<key>B53DF338-F4F7-4955-BD26-601AE413303D</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>class</string>
+			<key>text</key>
+			<string>Classroom</string>
+			<key>url</key>
+			<string>https://classroom.google.com/u/1/</string>
+		</dict>
+		<key>CE62CFC2-674B-4AF8-8647-640A320B27A8</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>net</string>
+			<key>text</key>
+			<string>SRM NET</string>
+			<key>url</key>
+			<string>https://iach.srmist.edu.in/Connect/PortalMain</string>
 		</dict>
 		<key>E8419B96-8EB3-4832-B99E-2664B1A181F5</key>
 		<dict>
