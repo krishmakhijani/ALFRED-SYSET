@@ -3,7 +3,7 @@
     "result" : {
       "textSpacing" : 5,
       "subtext" : {
-        "size" : 10,
+        "size" : 14,
         "colorSelected" : "#FFFFFF66",
         "font" : "System",
         "color" : "#FFFFFF66"
@@ -16,22 +16,22 @@
       },
       "backgroundSelected" : "#7B89A630",
       "text" : {
-        "size" : 15,
+        "size" : 25,
         "colorSelected" : "#FFFFFFFF",
         "font" : "System",
         "color" : "#FFFFFFE4"
       },
       "iconPaddingHorizontal" : 10,
       "roundness" : 8,
-      "paddingVertical" : 5,
-      "iconSize" : 19
+      "paddingVertical" : 7,
+      "iconSize" : 28
     },
     "search" : {
       "backgroundSelected" : "#A7C4E8FF",
       "paddingHorizontal" : 7,
       "spacing" : 9,
       "text" : {
-        "size" : 20,
+        "size" : 28,
         "colorSelected" : "#000000FF",
         "font" : "System",
         "color" : "#FFFFFFFF"
@@ -47,7 +47,7 @@
       "borderPadding" : 0,
       "borderColor" : "#0000007F",
       "blur" : 0,
-      "roundness" : 10,
+      "roundness" : 20,
       "paddingVertical" : 5
     },
     "credit" : "Signynt",
