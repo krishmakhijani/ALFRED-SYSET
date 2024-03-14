@@ -999,7 +999,10 @@ echo '{
 		</dict>
 		<dict>
 			<key>config</key>
-			<dict/>
+			<dict>
+				<key>unstackview</key>
+				<false/>
+			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.hidealfred</string>
 			<key>uid</key>
@@ -1139,37 +1142,6 @@ echo '{
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>fixedorder</key>
-				<false/>
-				<key>items</key>
-				<string>[{"title":"Manage Vaults","arg":"manage_vaults","subtitle":"Include or exclude vaults from results"},{"title":"Manage Accounts","arg":"manage_accounts","subtitle":"Include or exclude accounts from results"},{"title":"Force Update Items","arg":"update_items","subtitle":"Rebuild Workflow data"},{"title":"Reset Workflow","arg":"reset_workflow","subtitle":"Delete Workflow data"}]</string>
-				<key>keyword</key>
-				<string>:1pextras</string>
-				<key>matchmode</key>
-				<integer>0</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Uncommon but useful actions</string>
-				<key>title</key>
-				<string>1Password Extras</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.listfilter</string>
-			<key>uid</key>
-			<string>985CB791-EA4E-4B3E-A04E-37A481C33035</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argument</key>
 				<string>{query}</string>
 				<key>passthroughargument</key>
@@ -1278,7 +1250,10 @@ echo '{
 		</dict>
 		<dict>
 			<key>config</key>
-			<dict/>
+			<dict>
+				<key>unstackview</key>
+				<false/>
+			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.hidealfred</string>
 			<key>uid</key>
@@ -1303,6 +1278,37 @@ echo '{
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
 			<string>EEBA1F86-6CE0-4427-892D-A52955A980D5</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>fixedorder</key>
+				<false/>
+				<key>items</key>
+				<string>[{"title":"Manage Vaults","arg":"manage_vaults","subtitle":"Include or exclude vaults from results"},{"title":"Manage Accounts","arg":"manage_accounts","subtitle":"Include or exclude accounts from results"},{"title":"Force Update Items","arg":"update_items","subtitle":"Rebuild Workflow data"},{"title":"Reset Workflow","arg":"reset_workflow","subtitle":"Delete Workflow data"}]</string>
+				<key>keyword</key>
+				<string>:1pextras</string>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Uncommon but useful actions</string>
+				<key>title</key>
+				<string>1Password Extras</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>985CB791-EA4E-4B3E-A04E-37A481C33035</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1493,6 +1499,81 @@ Keep it running and try again.</string>
 			<integer>1</integer>
 		</dict>
 		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
+			<string>BB2058EE-BD2F-4858-9421-D44A3319E9E3</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>./1password.js 'sanity_checks'</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>11</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>B974DC8F-2F5C-4E0A-A866-1693C7C525A2</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://1password.com/downloads/command-line/</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>2C4443B4-B3E5-4C06-8444-48F2E3E040F8</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>./1password.js 'sanity_checks'</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>11</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>D631D0FB-3B6B-497A-AB5C-B80971C006E0</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
 			<key>config</key>
 			<dict>
 				<key>alfredfiltersresults</key>
@@ -1567,83 +1648,6 @@ echo '{
 			<string>608EC08C-E2FB-4A53-B92A-DEAA5E177DAD</string>
 			<key>version</key>
 			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict/>
-			<key>type</key>
-			<string>alfred.workflow.utility.junction</string>
-			<key>uid</key>
-			<string>BB2058EE-BD2F-4858-9421-D44A3319E9E3</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>./1password.js 'sanity_checks'</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>11</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>B974DC8F-2F5C-4E0A-A866-1693C7C525A2</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>skipqueryencode</key>
-				<false/>
-				<key>skipvarencode</key>
-				<false/>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://1password.com/downloads/command-line/</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>2C4443B4-B3E5-4C06-8444-48F2E3E040F8</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>./1password.js 'sanity_checks'</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>11</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>D631D0FB-3B6B-497A-AB5C-B80971C006E0</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1993,6 +1997,10 @@ echo "${new_items_hash}" &gt; "${items_hash_file}"</string>
 				<false/>
 				<key>focusedappvariablename</key>
 				<string></string>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -2495,9 +2503,9 @@ To report a problem, run `!1pdiagnostic`.</string>
 		<key>608EC08C-E2FB-4A53-B92A-DEAA5E177DAD</key>
 		<dict>
 			<key>xpos</key>
-			<real>60</real>
+			<real>200</real>
 			<key>ypos</key>
-			<real>545</real>
+			<real>625</real>
 		</dict>
 		<key>66052526-8BC3-4DC3-B7B7-D2C2EF591CB7</key>
 		<dict>
@@ -2574,9 +2582,9 @@ To report a problem, run `!1pdiagnostic`.</string>
 		<key>985CB791-EA4E-4B3E-A04E-37A481C33035</key>
 		<dict>
 			<key>xpos</key>
-			<real>60</real>
+			<real>30</real>
 			<key>ypos</key>
-			<real>365</real>
+			<real>455</real>
 		</dict>
 		<key>9E56D02A-13BF-43CF-819E-6836C62FB87B</key>
 		<dict>

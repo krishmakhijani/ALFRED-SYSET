@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8' ?>
-<workflow>
-  <name>homebrew controller</name>
-  <version>0.1</version>
-  <bundle>com.luceparadisiaca.homebrewcontroller</bundle>
-  <updated>1660198520</updated>
-  <file>homebrew_controller.alfredworkflow</file>
-</workflow>

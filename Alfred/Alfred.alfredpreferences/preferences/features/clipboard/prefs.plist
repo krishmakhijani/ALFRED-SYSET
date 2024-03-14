@@ -13,5 +13,11 @@
 		<key>string</key>
 		<string>C</string>
 	</dict>
+	<key>persistFor</key>
+	<integer>3</integer>
+	<key>persistForFiles</key>
+	<integer>1</integer>
+	<key>persistForImages</key>
+	<integer>1</integer>
 </dict>
 </plist>

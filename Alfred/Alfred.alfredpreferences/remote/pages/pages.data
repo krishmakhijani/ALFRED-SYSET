@@ -10,14 +10,8 @@
 		<string>3B86BD48-AE49-4792-9CE3-AEA153860033</string>
 		<string>E9A0566D-8157-46F4-AFBD-92BAB6A15923</string>
 		<string>DF855141-6248-4472-8C7B-FDA431752A8A</string>
-		<dict>
-			<key>pageuid</key>
-			<string>4c2052f75c2d8cd05579596c4f5af17871722313::454E2ABB-7327-4C15-A46D-ABE05E765CA4</string>
-			<key>referencefolder</key>
-			<string>workflows/user.workflow.AC3F2247-6BD1-4F70-BCAC-1A48763552C3/_remote/</string>
-		</dict>
 	</array>
 	<key>uid</key>
-	<string>F74EDC92-A04D-4BB7-B169-E4E1ADD6E46C</string>
+	<string>39BFFA25-CB2D-4BF9-9BF6-B6505FB93C8D</string>
 </dict>
 </plist>

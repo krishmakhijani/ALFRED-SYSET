@@ -4,82 +4,60 @@
 <dict>
 	<key>customSites</key>
 	<dict>
-		<key>139444E6-3696-4471-970E-1C76C48270CC</key>
+		<key>0D41CD1D-024B-4962-B96B-9488FDB8D5BA</key>
 		<dict>
 			<key>enabled</key>
 			<true/>
 			<key>keyword</key>
-			<string>bing</string>
+			<string>yt</string>
 			<key>text</key>
-			<string>BING CHAT</string>
+			<string>Youtube</string>
 			<key>url</key>
-			<string>https://www.bing.com/search?q=Bing+AI&amp;showconv=1&amp;FORM=hpcodx</string>
+			<string>https://www.youtube.com/results?search_query={query}&amp;page={startPage?}&amp;utm_source=opensearch</string>
 		</dict>
-		<key>1B148BA0-BCDC-4A5E-8AA8-180957FC63C1</key>
+		<key>2AFC1EF6-38CE-4E83-A33F-6E009C74F959</key>
 		<dict>
 			<key>enabled</key>
 			<true/>
 			<key>keyword</key>
-			<string>connect</string>
+			<string>academia</string>
 			<key>text</key>
-			<string>connect</string>
+			<string>Academia</string>
+			<key>url</key>
+			<string>https://academia.srmist.edu.in/</string>
+		</dict>
+		<key>5B3F8FFE-58DA-4BC1-A7A5-2197CE9C175D</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>wifi</string>
+			<key>text</key>
+			<string>Hostel Net</string>
 			<key>url</key>
 			<string>https://iach.srmist.edu.in/Connect/PortalMain</string>
 		</dict>
-		<key>4BBCA309-D51E-4176-A7E3-8FA0FA36A1AF</key>
+		<key>64807077-03AE-442C-8723-C2F94393055A</key>
 		<dict>
 			<key>enabled</key>
 			<true/>
 			<key>keyword</key>
-			<string>cmdn</string>
+			<string>tpwifi</string>
 			<key>text</key>
-			<string>CSS</string>
+			<string>TP NET</string>
 			<key>url</key>
-			<string>https://developer.mozilla.org/en-US/docs/Web/CSS/{query}</string>
+			<string>https://iac.srmist.edu.in/Connect/PortalMain</string>
 		</dict>
-		<key>70F1DA0F-3F73-434C-9871-45F7558A3DEA</key>
+		<key>ED9BAA81-FBE9-41C2-A633-4F52855FAC5D</key>
 		<dict>
 			<key>enabled</key>
 			<true/>
 			<key>keyword</key>
-			<string>srmail</string>
+			<string>attendance</string>
 			<key>text</key>
-			<string>SRMMAIL</string>
+			<string>Attendance</string>
 			<key>url</key>
-			<string>https://mail.google.com/mail/u/1/#inbox</string>
-		</dict>
-		<key>B53DF338-F4F7-4955-BD26-601AE413303D</key>
-		<dict>
-			<key>enabled</key>
-			<true/>
-			<key>keyword</key>
-			<string>class</string>
-			<key>text</key>
-			<string>Classroom</string>
-			<key>url</key>
-			<string>https://classroom.google.com/u/1/</string>
-		</dict>
-		<key>CE62CFC2-674B-4AF8-8647-640A320B27A8</key>
-		<dict>
-			<key>enabled</key>
-			<true/>
-			<key>keyword</key>
-			<string>net</string>
-			<key>text</key>
-			<string>SRM NET</string>
-			<key>url</key>
-			<string>https://iach.srmist.edu.in/Connect/PortalMain</string>
-		</dict>
-		<key>E8419B96-8EB3-4832-B99E-2664B1A181F5</key>
-		<dict>
-			<key>enabled</key>
-			<true/>
-			<key>keyword</key>
-			<string>hmdn</string>
-			<key>text</key>
-			<string>HTML</string>
-			<key>url</key>
-			<string>https://developer.mozilla.org/en-US/docs/Web/HTML/Element/{query}</string>
+			<string>https://academia.srmist.edu.in/#Page:My_Attendance</string>
 		</dict>
 	</dict>
 </dict>

@@ -2,11 +2,21 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>application</key>
+	<integer>1</integer>
 	<key>custom</key>
 	<string>on alfred_script(q)
-	tell application "iTerm"
-		activate
-		do script q
+	tell application "System Events"
+
+		tell application "Warp" to activate
+
+		set numWin to count (windows of process "Warp")
+		if numWin &lt; 1 then keystroke "n" using command down
+
+		delay 0.5
+		keystroke q
+		keystroke return
+
 	end tell
 end alfred_script</string>
 </dict>
