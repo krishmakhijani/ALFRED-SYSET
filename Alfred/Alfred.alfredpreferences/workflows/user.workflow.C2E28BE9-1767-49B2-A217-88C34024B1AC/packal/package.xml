@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8' ?>
-<workflow>
-  <name>Flask Docs</name>
-  <version>2.0.6</version>
-  <bundle>org.techouse.flask-docs</bundle>
-  <updated>1652525664</updated>
-  <file>flask-docs-v2.0.6.alfredworkflow</file>
-</workflow>

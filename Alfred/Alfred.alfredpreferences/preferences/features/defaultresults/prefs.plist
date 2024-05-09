@@ -6,7 +6,15 @@
 	<true/>
 	<key>showFolders</key>
 	<true/>
+	<key>showImages</key>
+	<true/>
 	<key>showPreferences</key>
 	<false/>
+	<key>showTextFiles</key>
+	<true/>
+	<key>showUserDefined</key>
+	<array>
+		<string>.pdf</string>
+	</array>
 </dict>
 </plist>

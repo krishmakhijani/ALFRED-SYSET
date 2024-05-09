@@ -976,6 +976,8 @@ echo '{
 				<integer>1</integer>
 				<key>scriptfile</key>
 				<string></string>
+				<key>skipuniversalaction</key>
+				<true/>
 				<key>subtext</key>
 				<string>Include or exclude vaults from results</string>
 				<key>title</key>
@@ -1142,6 +1144,37 @@ echo '{
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>fixedorder</key>
+				<false/>
+				<key>items</key>
+				<string>[{"title":"Manage Vaults","arg":"manage_vaults","subtitle":"Include or exclude vaults from results"},{"title":"Manage Accounts","arg":"manage_accounts","subtitle":"Include or exclude accounts from results"},{"title":"Force Update Items","arg":"update_items","subtitle":"Rebuild Workflow data"},{"title":"Reset Workflow","arg":"reset_workflow","subtitle":"Delete Workflow data"}]</string>
+				<key>keyword</key>
+				<string>:1pextras</string>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Uncommon but useful actions</string>
+				<key>title</key>
+				<string>1Password Extras</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>985CB791-EA4E-4B3E-A04E-37A481C33035</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argument</key>
 				<string>{query}</string>
 				<key>passthroughargument</key>
@@ -1209,6 +1242,8 @@ echo '{
 				<integer>1</integer>
 				<key>scriptfile</key>
 				<string></string>
+				<key>skipuniversalaction</key>
+				<true/>
 				<key>subtext</key>
 				<string>Include or exclude accounts from results</string>
 				<key>title</key>
@@ -1278,37 +1313,6 @@ echo '{
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
 			<string>EEBA1F86-6CE0-4427-892D-A52955A980D5</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>fixedorder</key>
-				<false/>
-				<key>items</key>
-				<string>[{"title":"Manage Vaults","arg":"manage_vaults","subtitle":"Include or exclude vaults from results"},{"title":"Manage Accounts","arg":"manage_accounts","subtitle":"Include or exclude accounts from results"},{"title":"Force Update Items","arg":"update_items","subtitle":"Rebuild Workflow data"},{"title":"Reset Workflow","arg":"reset_workflow","subtitle":"Delete Workflow data"}]</string>
-				<key>keyword</key>
-				<string>:1pextras</string>
-				<key>matchmode</key>
-				<integer>0</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Uncommon but useful actions</string>
-				<key>title</key>
-				<string>1Password Extras</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.listfilter</string>
-			<key>uid</key>
-			<string>985CB791-EA4E-4B3E-A04E-37A481C33035</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1499,6 +1503,84 @@ Keep it running and try again.</string>
 			<integer>1</integer>
 		</dict>
 		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>2</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>{var:items_search_keyword}</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Getting items…</string>
+				<key>script</key>
+				<string>readonly file="${alfred_workflow_data}/items.json"
+
+if [[ -f "${file}" ]]; then
+  cat "${file}"
+  exit 0
+fi
+
+# Disable 1Password 7 feature
+readonly prefs_file="${alfred_preferences}/preferences/local/${alfred_preferences_localhash}/features/1password/prefs.plist"
+
+if [[ -f "${prefs_file}" ]]; then
+  /usr/libexec/PlistBuddy -c 'Delete :enabled' "${prefs_file}" 2&gt; /dev/null
+fi
+
+echo '{
+  "rerun": 0.1,
+  "items": [{
+    "variables": { "action": "update_items" },
+    "title": "Sign in and update items",
+    "arg": "update_items",
+    "icon": { "path": "composite_icon.png" }
+  }]
+}'</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>skipuniversalaction</key>
+				<true/>
+				<key>subtext</key>
+				<string>Show your 1Password items</string>
+				<key>title</key>
+				<string>1Password</string>
+				<key>type</key>
+				<integer>11</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>inboundconfig</key>
+			<dict>
+				<key>externalid</key>
+				<string>search_items</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>608EC08C-E2FB-4A53-B92A-DEAA5E177DAD</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.junction</string>
 			<key>uid</key>
@@ -1572,82 +1654,6 @@ Keep it running and try again.</string>
 			<string>D631D0FB-3B6B-497A-AB5C-B80971C006E0</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<true/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>2</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>{var:items_search_keyword}</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>Getting items…</string>
-				<key>script</key>
-				<string>readonly file="${alfred_workflow_data}/items.json"
-
-if [[ -f "${file}" ]]; then
-  cat "${file}"
-  exit 0
-fi
-
-# Disable 1Password 7 feature
-readonly prefs_file="${alfred_preferences}/preferences/local/${alfred_preferences_localhash}/features/1password/prefs.plist"
-
-if [[ -f "${prefs_file}" ]]; then
-  /usr/libexec/PlistBuddy -c 'Delete :enabled' "${prefs_file}" 2&gt; /dev/null
-fi
-
-echo '{
-  "rerun": 0.1,
-  "items": [{
-    "variables": { "action": "update_items" },
-    "title": "Sign in and update items",
-    "arg": "update_items",
-    "icon": { "path": "composite_icon.png" }
-  }]
-}'</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Show your 1Password items</string>
-				<key>title</key>
-				<string>1Password</string>
-				<key>type</key>
-				<integer>11</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>inboundconfig</key>
-			<dict>
-				<key>externalid</key>
-				<string>search_items</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>608EC08C-E2FB-4A53-B92A-DEAA5E177DAD</string>
-			<key>version</key>
-			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -2098,6 +2104,8 @@ echo "${new_items_hash}" &gt; "${items_hash_file}"</string>
 				<integer>2</integer>
 				<key>keyword</key>
 				<string>!1pdiagnostic</string>
+				<key>skipuniversalaction</key>
+				<true/>
 				<key>subtext</key>
 				<string>Result will be copied to the clipboard</string>
 				<key>text</key>
@@ -2339,11 +2347,11 @@ Interact with your 1Password items via the `1p` keyword.
 
 ![Alfred search for 1p](images/about/1p.png)
 
-* &lt;kbd&gt;↩&lt;/kbd&gt;: Open and Fill.
-* &lt;kbd&gt;⌘&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt;: View in 1Password.
-* &lt;kbd&gt;⌥&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt;: Copy Username.
-* &lt;kbd&gt;⌃&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt;: Copy Password.
-* &lt;kbd&gt;⇧&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt;: Copy One-Time Password
+* &lt;kbd&gt;↩&lt;/kbd&gt; Open and Fill.
+* &lt;kbd&gt;⌘&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt; View in 1Password.
+* &lt;kbd&gt;⌥&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt; Copy Username.
+* &lt;kbd&gt;⌃&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt; Copy Password.
+* &lt;kbd&gt;⇧&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt; Copy One-Time Password
 
 Uncommon but useful actions, such as toggling vaults, can be accessed with `:1pextras`.
 
@@ -2503,9 +2511,9 @@ To report a problem, run `!1pdiagnostic`.</string>
 		<key>608EC08C-E2FB-4A53-B92A-DEAA5E177DAD</key>
 		<dict>
 			<key>xpos</key>
-			<real>200</real>
+			<real>60</real>
 			<key>ypos</key>
-			<real>625</real>
+			<real>545</real>
 		</dict>
 		<key>66052526-8BC3-4DC3-B7B7-D2C2EF591CB7</key>
 		<dict>
@@ -2582,9 +2590,9 @@ To report a problem, run `!1pdiagnostic`.</string>
 		<key>985CB791-EA4E-4B3E-A04E-37A481C33035</key>
 		<dict>
 			<key>xpos</key>
-			<real>30</real>
+			<real>60</real>
 			<key>ypos</key>
-			<real>455</real>
+			<real>365</real>
 		</dict>
 		<key>9E56D02A-13BF-43CF-819E-6836C62FB87B</key>
 		<dict>
@@ -3032,7 +3040,7 @@ Changes come into effect on next cache update.</string>
 				<key>required</key>
 				<false/>
 				<key>text</key>
-				<string>Check for 1Password modifications and offer to update data</string>
+				<string>Check for 1Password modifications and offer to update</string>
 			</dict>
 			<key>description</key>
 			<string></string>
@@ -3045,7 +3053,7 @@ Changes come into effect on next cache update.</string>
 		</dict>
 	</array>
 	<key>version</key>
-	<string>2023.12</string>
+	<string>2024.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/alfredapp/1password-workflow/</string>
 </dict>

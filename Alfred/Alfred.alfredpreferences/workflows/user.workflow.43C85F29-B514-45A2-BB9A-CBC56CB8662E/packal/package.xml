@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8' ?>
-<workflow>
-  <name>Alfred Tailwind Color Palette</name>
-  <version>1.0</version>
-  <bundle>com.TailwindColorPalette.MatthysDev</bundle>
-  <updated>1646254715</updated>
-  <file>tailwindcolorpalette.alfredworkflow</file>
-</workflow>

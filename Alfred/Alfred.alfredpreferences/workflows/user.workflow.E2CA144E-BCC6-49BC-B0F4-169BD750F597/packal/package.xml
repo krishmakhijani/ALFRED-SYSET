@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8' ?>
-<workflow>
-  <name>ant-design-docs</name>
-  <version>1.0</version>
-  <bundle>com.beygee.antd.docs</bundle>
-  <updated>1628322503</updated>
-  <file>ant_design_docs.alfredworkflow</file>
-</workflow>

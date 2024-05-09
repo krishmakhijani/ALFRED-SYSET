@@ -26,6 +26,17 @@
 			<key>url</key>
 			<string>https://academia.srmist.edu.in/</string>
 		</dict>
+		<key>526FB9DF-2414-4EE1-B856-72797072B00F</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>chat</string>
+			<key>text</key>
+			<string>ChatGPT</string>
+			<key>url</key>
+			<string>https://chat.openai.com/?q={query}</string>
+		</dict>
 		<key>5B3F8FFE-58DA-4BC1-A7A5-2197CE9C175D</key>
 		<dict>
 			<key>enabled</key>
@@ -47,6 +58,28 @@
 			<string>TP NET</string>
 			<key>url</key>
 			<string>https://iac.srmist.edu.in/Connect/PortalMain</string>
+		</dict>
+		<key>8B2AAFE0-A6AC-4731-8E52-F1D36939FB3F</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>image</string>
+			<key>text</key>
+			<string>DALL-E</string>
+			<key>url</key>
+			<string>https://chatgpt.com/g/g-2fkFE8rbu-dall-e/?q={query}</string>
+		</dict>
+		<key>B50A6B16-F420-42EE-A221-301DF4DB3610</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>diagram</string>
+			<key>text</key>
+			<string>Whimsical</string>
+			<key>url</key>
+			<string>https://chatgpt.com/g/g-vI2kaiM9N-whimsical-diagrams/?q={query}</string>
 		</dict>
 		<key>ED9BAA81-FBE9-41C2-A633-4F52855FAC5D</key>
 		<dict>
