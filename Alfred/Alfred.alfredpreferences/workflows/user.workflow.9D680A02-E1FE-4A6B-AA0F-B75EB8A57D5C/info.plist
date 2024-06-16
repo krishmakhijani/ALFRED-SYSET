@@ -175,7 +175,7 @@
 	<key>description</key>
 	<string>Quit all apps, with exceptions</string>
 	<key>disabled</key>
-	<false/>
+	<true/>
 	<key>name</key>
 	<string>QuitArena</string>
 	<key>objects</key>
