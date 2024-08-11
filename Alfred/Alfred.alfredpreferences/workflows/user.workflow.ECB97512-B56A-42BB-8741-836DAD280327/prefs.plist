@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>__country_code</key>
+	<string>IN</string>
+	<key>__display_name</key>
+	<string>KRISH</string>
+	<key>__fuzzy_search</key>
+	<true/>
+	<key>__oauth_access_token</key>
+	<string>BQDy5_yGJ99P3Ml0T4KprBIxiZaoysPL73CzZrVlStX7R-UJWu4JQQY-VHFyVi--Q1RH4kV0zp-1qOLgF6Y2TEfH_vNlh2OaM80Mm5RbrBJbrnCmHNauzazdd0i8K8aC1U24JMk-r7rRPzakHiwRMRBS7-ED_qHiCAtVIwkOAPJPKVgSqsEvKvv-6DQFgx5UptrXEp5OLvcfvY3MeA3lFl5zv6KUEcbvpPGTv9mfsl9rylXKCohF8o65LQx6MqpmgxyWGSKzp_wBVsQcG8LaB-QBuZtD2AsFQuKNeUQ31p2lZFgNPhXgNhZL_zDM-Z7srjJqrhahk77wM2U</string>
+	<key>__oauth_client_id</key>
+	<string>9d96a47674a5426cb6b2467775d47d75</string>
+	<key>__oauth_client_secret</key>
+	<string>c176c91344b84818978082aa45a5f775</string>
+	<key>__oauth_refresh_token</key>
+	<string>AQCRpnVY9TrOfLDaA-mPUjXzEz6MiHmUdgu0i0l0LI5MLkHhM31XPP7E7R4o_z5SfjLonzCCazJMhi4CxBm24teIlcvW1cX2AT90PGMCCW3fIfto4F2QrE5xfCtEfgpj-HU</string>
+	<key>__podcasts_enabled</key>
+	<string>0</string>
+	<key>__quick_mode</key>
+	<true/>
+	<key>__userid</key>
+	<string>727rwr9gweu1oyezhvd3ts47i</string>
+	<key>automatically_open_spotify_app</key>
+	<true/>
+	<key>menu_display_browse_by_artist</key>
+	<false/>
+	<key>menu_display_browse_by_show</key>
+	<false/>
+	<key>menu_display_browse_categories</key>
+	<false/>
+	<key>menu_display_your_recent_tracks</key>
+	<false/>
+	<key>reduce_notifications</key>
+	<true/>
+</dict>
+</plist>
